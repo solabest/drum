@@ -3,7 +3,7 @@ for(var i=0;i<document.querySelectorAll(".drum").length;i++){
 
     document.querySelectorAll(".drum")[i].addEventListener("click",function() {
 
-        var buttonInnerHTML=this.innerHTML;
+        var buttonInnerHTML=this.innerText;
 
         switch(buttonInnerHTML){
             case "W":
@@ -25,13 +25,13 @@ for(var i=0;i<document.querySelectorAll(".drum").length;i++){
                   break;
 
         case "J":
-          var snare=new Audio("sounds/snare.mp3");
-        snare.play();
+          var crash=new Audio("sounds/crash.mp3");
+          crash.play();
                  break;
                            
         case "K":
-             var crash=new Audio("sounds/crash.mp3");
-            crash.play();
+             var snare=new Audio("sounds/snare.mp3");
+            snare.play();
          break;
         
      case "L":
